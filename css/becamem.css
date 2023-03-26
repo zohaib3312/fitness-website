@@ -1,0 +1,508 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh ;
+    height: auto;
+    
+}
+
+
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.head{
+    height: 150px;
+    width: 100%;
+   position: relative;
+   top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(225, 225, 225, 0);
+    font-size: 60px;
+    display: flex;
+    overflow: hidden;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 550px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(225,225,225,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(225,225,225,0.5);
+    border-left: 1px solid rgba(225,225,225,0.5);
+    backdrop-filter: blur(5px);
+    
+ 
+}
+/*---------------------- 1st card -----------------------------*/
+
+.container .card .content1
+{
+    padding : 20px;
+    text-align: center;
+    transform: translatex(-200px);
+    opacity: 0;
+    transition:  0.5s ;
+
+
+}
+
+.container .card:hover .content1
+{
+
+    transform: translateY(0px);
+    opacity: 1;
+
+
+}
+
+.container .card .content1 .standard h1
+{
+    position: relative;
+    bottom: 60px;
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    margin-top: 30px;
+  
+  
+}
+
+
+.container .card .content1 .h1 h4
+{
+    position: relative;
+    bottom: 30px;
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+  
+}
+
+.container .card .content1 .p1
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+   margin-left: -65px;
+ 
+}
+.container .card .content1 .p2
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -65px;
+}
+.container .card .content1 .p3
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -60px;
+}
+.container .card .content1 .p4
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -25px;
+}
+.container .card .content1 .p5
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -40px;
+}
+
+
+.container .card .content1 .but1 a
+{
+    
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+margin-top: 25px;
+background: white;
+color: black;
+border-radius: 20px;
+text-decoration: none;
+font-weight: 500;
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+}
+/*--------------------- 1st card ----------------------*/
+/* ------------------------- 2nd card -------------------*/
+
+.container .card .content2
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(150px);
+    opacity: 0;
+    transition:  0.5s ;
+
+
+}
+
+.container .card:hover .content2
+{
+
+    transform: translateY(0px);
+    opacity: 1;
+
+
+}
+
+
+
+.container .card .content2 .popular h1
+{
+    position: relative;
+    bottom: 60px;
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    margin-top: 30px;
+  
+  
+}
+
+
+.container .card .content2 .h1 h2
+{
+    position: relative;
+    bottom: 30px;
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+  
+}
+
+.container .card .content2 .p1
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+   margin-left: -56px;
+ 
+}
+.container .card .content2 .p2
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -56px;
+}
+.container .card .content2 .p3
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -56px;
+}
+.container .card .content2 .p4
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+.container .card .content2 .p5
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -40px;
+}
+
+
+.container .card .content2 .but2 a
+{
+    
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+margin-top: 25px;
+background: white;
+color: black;
+border-radius: 20px;
+text-decoration: none;
+font-weight: 500;
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+}
+/* ------------------------- 2nd card -------------------*/
+
+
+/* ------------------------- 3rd card -------------------*/
+.container .card .content3
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(150px);
+    opacity: 0;
+    transition:  0.5s ;
+
+
+}
+
+.container .card:hover .content3
+{
+
+    transform: translateY(0px);
+    opacity: 1;
+
+
+}
+
+
+
+.container .card .content3 .golden h1
+{
+    position: relative;
+    bottom: 60px;
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    margin-top: 30px;
+  
+  
+}
+
+
+.container .card .content3 .h1 h2
+{
+    position: relative;
+    bottom: 30px;
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+  
+}
+
+.container .card .content3 .p1
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+   margin-left: -65px;
+ 
+}
+.container .card .content3 .p2
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -65px;
+}
+.container .card .content3 .p3
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -60px;
+}
+.container .card .content3 .p4
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -25px;
+}
+.container .card .content3 .p5
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -40px;
+}
+
+
+.container .card .content3 .but3 a
+{
+    
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+margin-top: 25px;
+background: white;
+color: black;
+border-radius: 20px;
+text-decoration: none;
+font-weight: 500;
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+}
+/* ------------------------- 3rd card -------------------*/
+
+
+/* ------------------------- 4TH card -------------------*/
+.container .card .content4
+{
+    padding: 20px;
+    text-align: center;
+    transform: translatex(300px);
+    opacity: 0;
+    transition:  0.5s ;
+
+
+}
+
+.container .card:hover .content4
+{
+
+    transform: translateY(0px);
+    opacity: 1;
+
+
+}
+
+
+
+.container .card .content4 .professional h1
+{
+    position: relative;
+    bottom: 60px;
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+    margin-top: 30px;
+  
+  
+}
+
+
+.container .card .content4 .h1 h2
+{
+    position: relative;
+    bottom: 30px;
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+  
+}
+
+.container .card .content4 .p1
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+   margin-left: -65px;
+ 
+}
+.container .card .content4 .p2
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -65px;
+}
+.container .card .content4 .p3
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -60px;
+}
+.container .card .content4 .p4
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -25px;
+}
+.container .card .content4 .p5
+{
+    font-size: 1.4em;
+    color: white;
+    z-index: 1;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-left: -40px;
+}
+
+
+.container .card .content4 .but4 a
+{
+    
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+margin-top: 25px;
+background: white;
+color: black;
+border-radius: 20px;
+text-decoration: none;
+font-weight: 500;
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
+}
+/* ------------------------- 4TH card -------------------*/

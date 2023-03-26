@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Fitness</title>
+  <link rel="icon" href="asset/logomain.jpg" type="image/x-icon">
+  <!-- bootstrap css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- font awsome custum link  -->
+  <script src="https://kit.fontawesome.com/f4763a6d94.js" crossorigin="anonymous"></script>
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!-- fa link -->
+  <script src="https://kit.fontawesome.com/b4e8737175.js" crossorigin="anonymous"></script>
+  <!-- fa link -->
+
+  <!-- css custum link -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <style>
+    /* services */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .image {
+      height: 100%;
+      width: 100%;
+      background-image: url(asset/servback1.jpg);
+      background-attachment: fixed;
+
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+
+    /* box1 */
+    .box1 {
+      transition: 0.5s ease-in;
+    }
+
+    .box1:hover {
+      border-radius: 25px;
+    }
+
+    .box1:hover .cycle-icon i {
+      color: red;
+
+    }
+
+    .s-abo-cyc {
+
+      opacity: 0;
+      transition: 0.5s;
+
+    }
+
+    .s-abo-cyc a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .box1:hover .s-abo-cyc {
+
+      opacity: 1;
+
+
+    }
+
+    /* box2 */
+    .box2 {
+      transition: 0.5s ease-in;
+    }
+
+    .box2:hover {
+      border-radius: 25px;
+    }
+
+
+    .box2:hover .swim-icon i {
+      color: red;
+
+    }
+
+    .s-abo-swi {
+
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    .s-abo-swi a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .box2:hover .s-abo-swi {
+
+      opacity: 1;
+
+
+    }
+
+    /* box3 */
+    .box3 {
+      transition: 0.5s ease-in;
+    }
+
+    .box3:hover {
+      border-radius: 25px;
+    }
+
+    .box3:hover .fitness-icon i {
+      color: red;
+
+    }
+
+    .s-abo-fit {
+
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    .s-abo-fit a {
+      text-decoration: none;
+      color: white;
+    }
+
+
+    .box3:hover .s-abo-fit {
+
+      opacity: 1;
+
+
+    }
+
+    /* box4 */
+    .box4 {
+      transition: 0.5s ease-in;
+    }
+
+    .box4:hover {
+      border-radius: 25px;
+    }
+
+    .box4:hover .spa-icon i {
+      color: red;
+
+    }
+
+    .s-abo-spa {
+
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    .s-abo-spa a {
+      text-decoration: none;
+      color: white;
+    }
+
+
+    .box4:hover .s-abo-spa {
+
+      opacity: 1;
+
+
+    }
+
+    /* servecess */
+
+    /* gallery altamash */
+    .body1 {
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 55vh;
+      background: rgb(49, 49, 49);
+      margin: 0;
+      padding: 0;
+    }
+
+    .box-img {
+      position: relative;
+      width: 332px;
+      height: 250px;
+      transform-style: preserve-3d;
+
+      animation: abc 40s linear infinite;
+    }
+
+    @keyframes abc {
+      0% {
+        transform: perspective(1000px) rotatey(0deg);
+      }
+
+      100% {
+        transform: perspective(1000px) rotatey(360deg);
+      }
+    }
+
+
+    .box-img span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+      -webkit-box-reflect: below 0px linear-gradient(tranparent, tranparent, #004);
+      border: 4px solid white;
+
+      background-color: white;
+    }
+
+
+
+    .box-img span img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: ease-in 0.3s;
+    }
+
+    .box-img span img:hover {
+      opacity: 50%;
+      transform: scale(1.03);
+    }
+
+    .box-img span i:hover img {
+      opacity: 50% !important;
+
+    }
+
+
+
+    .box-img span i {
+      display: none;
+      transition: ease-in 0.3s;
+    }
+
+    .box-img span:hover i {
+      display: block;
+      z-index: 1;
+    }
+
+    /* gallery altamash */
+
+    /* -------------------gallery css -0------------------------*/
+
+    .gallery-title span {
+
+      font-family: 'Teko', sans-serif !important;
+
+
+      font-weight: 300;
+      font-size: 50px;
+      margin-bottom: 22px;
+      color: rgb(240, 78, 60);
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      /* left: 300px; */
+      padding-top: 20px;
+
+
+
+    }
+
+
+    .gallery-title span::before {
+
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 5px;
+      background: rgb(240, 78, 60);
+      left: -87px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 10px;
+
+
+
+
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+    }
+
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* -ms-transform: translate(-50%, -50%); */
+      text-align: center;
+    }
+
+    .container:hover .image {
+      opacity: 0.5;
+
+
+    }
+
+    .container:hover .middle {
+      opacity: 1;
+    }
+
+    .text {
+      /* background-color: rgb(240, 78, 60); */
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+
+
+    .text i {
+
+      font-size: 40px;
+
+    }
+
+
+    .text a {
+      color: rgb(240, 78, 60);
+    }
+
+
+
+    /*---------------------xx gallery css xx---------------*/
+
+    /* -----------------------------about our trainer css -----------------------*/
+    .btn-header {
+      width: 200px;
+      padding: 20px 20px;
+      background: rgb(255, 19, 19);
+      color: white;
+      font-family: sans-serif;
+      border: none;
+      text-align: center;
+
+
+
+    }
+
+
+    .btn-header a {
+      text-decoration: none;
+      color: white;
+
+
+
+    }
+
+    .imgtra {
+      height: auto;
+      width: auto;
+      background-image: url(asset/backgroundtra.jpg);
+      background-size: 100% 100%;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+    }
+
+    .tr1 {
+      height: 550px;
+      width: 95%;
+      background-color: rgb(39, 39, 39);
+      background-image: url(asset/trainer5.png);
+      background-size: 100% 100%;
+      border: 10px solid white;
+    }
+
+    .tr1:hover {
+      border: 10px solid rgb(0, 255, 64);
+
+    }
+
+
+    .tr1:hover .text .h5 {
+      color: rgb(0, 255, 64) !important;
+      border-top: 3px solid rgb(0, 255, 64) !important;
+      border-bottom: 3px solid rgb(0, 255, 64) !important;
+    }
+
+    .tr1:hover .text h3 {
+      color: rgb(0, 255, 64) !important;
+    }
+
+    .tr1:hover .text .hr {
+      border: 2px solid rgb(0, 255, 64) !important;
+    }
+
+    .tr2 {
+      height: 550px;
+      width: 95%;
+      background-color: rgb(39, 39, 39);
+      background-image: url(asset/trainer2.jpg);
+      background-size: 100% 100%;
+      border: 10px solid rgb(255, 255, 255);
+    }
+
+    .tr2:hover {
+      border: 10px solid rgb(229, 255, 0);
+    }
+
+    .tr2:hover .text h5 {
+      color: rgb(229, 255, 0) !important;
+      border-top: 3px solid rgb(229, 255, 0) !important;
+      border-bottom: 3px solid rgb(229, 255, 0) !important;
+    }
+
+    .tr2:hover .text h3 {
+      color: rgb(229, 255, 0) !important;
+    }
+
+
+    .tr3 {
+      height: 550px;
+      width: 95%;
+      background-color: rgb(39, 39, 39);
+      background-image: url(asset/trainer6.png);
+      background-size: 100% 100%;
+      border: 10px solid rgb(255, 255, 255);
+    }
+
+    .tr3:hover {
+      border: 10px solid rgb(0, 110, 255);
+    }
+
+    .tr3:hover .text h5 {
+      color: rgb(0, 110, 255) !important;
+      border-top: 3px solid rgb(0, 110, 255) !important;
+      border-bottom: 3px solid rgb(0, 110, 255) !important;
+    }
+
+    .tr3:hover .text h3 {
+      color: rgb(0, 110, 255) !important;
+    }
+
+    /* xx---------------------xxabout our trainer css  xx---------------------xx*/
+
+    /* time table border */
+
+
+    .imgtable {
+      background-image: url(asset/tablebackground3.jpg);
+      background-size: 100%;
+      background-position: bottom;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    table thead tr td {
+      background-color: rgb(0, 190, 159);
+    }
+
+    td {
+      height: 100px;
+      width: auto;
+      border: 2px solid rgb(100, 100, 100);
+      padding-top: 10px;
+      background-color: black;
+      color: white;
+    }
+
+    .fill:hover {
+      background-color: rgb(0, 190, 159);
+      color: rgb(255, 255, 255);
+    }
+
+    p {
+      font-size: 18px;
+      color: rgb(226, 226, 226);
+    }
+
+    .time:hover {
+      background-color: black;
+      color: rgb(0, 190, 159);
+    }
+
+    .blank {
+      background-color: black;
+    }
+
+    #light {
+      background-color: rgb(26, 26, 26);
+    }
+
+    #light:hover {
+      background-color: rgb(0, 190, 159);
+      color: rgb(255, 255, 255);
+    }
+
+    #lightbla {
+      background-color: rgb(26, 26, 26);
+    }
+
+    /* time table border */
+
+
+    /* trainer section */
+    .social-link-trainer i {
+      position: relative;
+      left: 80px;
+      margin-left: 50px;
+      font-size: 30px;
+      /* background-color: #172FE8 !important; */
+      color: #172FE8;
+      transition: all 0.5s;
+    }
+
+
+    .social-link-trainer i:hover {
+
+      color: #EF4D2A;
+      transform: rotate(360deg) !important;
+    }
+
+
+    .about-img img {
+
+      /* clip-path: polygon(0 24%, 100% 0, 100% 81%, 0 100%); */
+      /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); */
+      clip-path: polygon(0 13%, 100% 0%, 99% 85%, 0% 100%);
+      
+    }
+
+    .about-description h1 {
+
+      font-weight: bold;
+      /* border-bottom: 5px solid blue !important; */
+      width: 35%;
+      font-family: 'Bitter', serif;
+
+    }
+
+    .about-description p {
+
+      color: gray;
+      text-align: justify;
+      padding: 10px;
+      margin-top: 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      border-left: 6px solid blue;
+      border-radius: 10px;
+    }
+
+
+    .different {
+      border: none !important;
+
+    }
+
+
+    .signature {
+
+
+      margin-left: -50px;
+    }
+
+
+    .signature button {
+      padding: 10px;
+
+    }
+/* 
+@media screen and (max-width:518) {
+  .about-img img {
+    position: relative;
+    left: 10px;
+  }
+
+} */
+
+/* media query section  */
+
+
+
+
+    /* .left-button{
+
+
+width: 20%;
+} */
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- 
+  <div class="container-fluid">
+
+
+    <div class="row  one">
+      
+
+
+      <div class="col-lg-12   ">
+
+        <div class="container-fluid">
+          <div class="row">
+            -*---------navbar section ----------- -->
+
+  <!-- <nav class="navbar navbar-expand-lg  fixed-top " >
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> <img src="asset/logomain.png" alt="" height="30px"
+                    width="40px"> <span style="color: #5DADE2 ;"> Prime </span>
+
+                  <span style="color: white;"> Fitness</span> </a>
+                <button class="navbar-toggler btn-outline-light" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav m-auto ">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
+                    <a class="nav-link" href="about us.html" style="color: white;">About us</a>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="color: white;">
+                        Services
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item mt-2" href="swimming.html">Swimming</a></li>
+                        <li><a class="dropdown-item" href="cycling.html">Cycling</a></li>
+                        <li><a class="dropdown-item" href="sportfitness.html">Sport & Fitness</a></li> -->
+  <!-- <li><a class="dropdown-item" href="becamem.html">Membership</a></li> -->
+  <!-- <li><a class="dropdown-item" href="salonspa.html">Salon & Spa</a></li>
+
+
+                      </ul>
+                    </li>
+
+                    </a>
+                    <a class="nav-link" href="inquiryform.html" style="color: white;">Enquiry Form</a>
+                    <a class="nav-link" href="timetable.html" style="color: white;">Schedule</a>
+                    <a class="nav-link" href="galleryzohaib.html" style="color: white;">Gallery</a>
+
+
+
+
+                  </div>
+                  <div class="btn-header mb-2 ">
+                    <a href="becamem.html"> <span style="font-size: 15px;  "> BECOME A MEMBER </span> </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+ -->
+
+  <!-- </div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+      <div class="row">
+
+
+        <div class="col-9">
+
+          <div class="text-title mb-5">
+
+
+
+
+            <h1>
+
+              BULD PERFECT BODY <BR>
+              SHAPE FOR GOOD AND <BR>
+              HEALTH LIFE.
+
+            </h1>
+
+          </div>
+          <div class="btn-header mt-5" id="four" style="margin-top: 20px;">
+            <a href="becamem.html"> <span style="font-size: 15px;  "> BECOME A MEMBER </span> </a>
+          </div>
+
+        </div>
+
+
+        <div class="col-2">
+
+          <div class="play-btn">
+
+
+            <a href="Assests/BROKEN 😢 ANDREI DEIU.mp4"> <i class="fa fa-play" aria-hidden="true"></i></a>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+ -->
+
+
+  <!---------------- header section-------------------  -->
+
+  <div class="container-fluid  ">
+
+
+    <div class="row  one">
+
+
+      <div class="col-12  ">
+
+        <!-- -*---------navbar section ----------- -->
+
+        <nav class="navbar navbar-expand-lg  ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <span style="color: #5DADE2 ;"> Prime </span>
+
+              <span style="color: white;"> Fitness</span> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav m-auto ">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="about us.html">About us</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Services
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                      <li><a class="dropdown-item" href="cycling.html">Cycling</a></li>
+                      <li><a class="dropdown-item" href="sportfitness.html">Sport & Fitness</a></li>
+                      <li><a class="dropdown-item" href="becamem.html">Membership</a></li>
+                      <li><a class="dropdown-item" href="salonspa.html">Salon & Spa</a></li>
+
+
+                    </ul>
+                </li>
+
+                </a>
+                <a class="nav-link" href="inquiryform.html">Enquiry Form</a>
+                <a class="nav-link" href="galleryzohaib.html">Gallery</a>
+                <!-- <a class="nav-link" href="contact.html">contact us</a> -->
+
+              </div>
+              <div class="btn-header">
+                <a href="becamem.html"> <span style="font-size: 15px;  "> BECOME A MEMBER </span> </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!------------------- navbar section end-------------------- -->
+
+
+
+
+      </div>
+
+
+
+
+      <div class="row">
+
+
+        <div class="col-9">
+
+          <div class="text-title">
+
+
+
+
+            <h1>
+
+              BULD PERFECT BODY <BR>
+              SHAPE FOR GOOD AND <BR>
+              HEALTH LIFE.
+
+            </h1>
+
+          </div>
+          <div class="btn-header" id="four">
+            <a href="becamem.html"> <span style="font-size: 15px;  "> BECOME A MEMBER </span> </a>
+          </div>
+
+        </div>
+
+
+        <div class="col-2">
+
+          <div class="play-btn">
+
+
+            <a href="Assests/BROKEN 😢 ANDREI DEIU.mp4"> <i class="fa fa-play" aria-hidden="true"></i></a>
+
+
+
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+  <!------------------- header section finish----------- -->
+
+
+
+
+
+
+
+
+  <!------------------- header section finish----------- -->
+
+  <!-- -------------------about us --------------------------->
+  <!-- <div class="container">
+
+    <div class="row">
+
+
+
+      <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-4 ">
+
+        <div class="about-img ">
+          <img src="asset/abgympic.jpg" alt="" height="670px" width="100%"
+            style="border-left: 30px solid red; border-top: 20px solid red;"" >
+          </div>
+          </div>
+          
+      <div class=" col-lg-6 col-md-12 col-sm-12 mt-5 mb-5 ml-3">
+
+
+          <div class="section-tittle mb-3 ">
+            <span>
+              <h3 style="color: red;">
+                <hr width="20%" style="float: left; border: 4px solid rgb(255, 0, 0);"> &nbsp;&nbsp; ABOUT OUR GYM
+              </h3>
+            </span>
+            <h1><b>Safe Body building proper Solutions That Saves our Valuable Time!</b></h1>
+          </div>
+          <p class="pera-top">
+          <h3 style="color: rgb(85, 85, 85); text-align: justify;">Prime Fitness is fitness club established in the year
+            1982. The fitness club has equipped with all basic fitness equipment and also included the newly introduced.
+          </h3>
+          </p>
+          <p class="mb-65 pera-bottom mb-3">
+          <h3 style="color: rgb(85, 85, 85); text-align: justify;">The Prime fitness club is the flagship brand for
+            Prime Fitness Club Ltd, a UN based health and fitness services provider and a pioneer in the “Integrated
+            Health Club Management Solutions’ business. Prime Fitness Club ltd focuses on staying fit is most important
+            to meet the challenging requirements.</h3>
+          </p>
+
+          <div class="btn-header mt-2 mb-5" id="four">
+            <a href="becamem.html"> <span style="font-size: 15px; margin-top: 20px; "> BECOME A MEMBER </span> </a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div> -->
+
+
+
+  <br>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6  col-md-12 col-sm-12">
+
+        <div class="about-img   text-center h-sm-2 ">
+
+          <img  class="img-responsive" src="images/about us img2.jpeg" alt="" width="90%" height="600px">
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+      <div class="col-lg-6  ml-md-5">
+
+        <div class="about-description">
+
+          <h1 " > About us</h1>
+
+<p > It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English versions have evolved over the years  </p>
+
+
+<p class=" different"> It is a long established fact that a reader will be distracted by the readable content of a page
+            when looking at its layout Lorem ipsm </p>
+
+            <div class="signature">
+
+
+              <img src="images/signature (1).png" alt="" width="60%">
+
+              <button type="button" class="btn btn-outline-danger">More About us</button>
+
+
+            </div>
+
+
+            <!-- <div class="left-button">
+
+</div> -->
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <br> <br>
+
+
+
+  <!--xxx--------------- about us xxx----------------------xxx-->
+
+  <!-- SERVICES -->
+
+  <div class="image ">
+    <div class="container ">
+
+
+
+      <div class="row mb-5">
+        <div class="section-tittle section-tittle1 mt-5 ">
+          <div class="col"><span>
+              <h3 style="color: red;">
+                <hr width="10%" style="float: left; border: 4px solid rgb(255, 0, 0);"> &nbsp;&nbsp; OUR SERVICES FOR
+                YOU
+              </h3>
+            </span></div>
+
+        </div>
+      </div>
+      <div class="row">
+
+
+        <div class="col-lg-6 mt-3">
+          <h1 style="color: white;"><b>PUSH YOUR LIMITS FORWARD WE OFFER TO YOU</b></h1>
+        </div>
+      </div>
+
+      <div class="boxes" style="margin-top: 150px;">
+
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+            <div class="box1" style="height: 450px; width: 100%; background-color: white;">
+
+              <div class="cycle-icon" style="text-align: center; padding-top: 50px;"> <i
+                  class="fa-solid fa-bicycle fa-4x fa-bounce">
+                </i></div>
+
+              <div class="sname" style="text-align: center ; margin-top: 40px;">
+                <h2> CYCLING</h2>
+              </div>
+
+              <div class="sdata"
+                style="text-align: center; font-size: 24px; padding-left: 12px; padding-right: 12px; margin-top: 30px; line-height: 30px; ">
+                <p style="color: rgb(20, 20, 20);">
+                  Riding a bike is fairly simple. If you have difficulty with a standard bicycle,
+                </p>
+              </div>
+
+              <div class="s-abo-cyc"
+                style="height: 78PX; width: 100%; margin-top: 30px; background-color: red; color: white; text-align: center; padding-top: 28px;">
+                <a href="cycling.html">
+                  <h6>DISCOVER MORE ABOUT CYCLING</h6>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+            <div class="box2" style="height: 450px; width: 100%; background-color: white;">
+
+              <div class="swim-icon" style="text-align: center; padding-top: 50px;"> <i
+                  class="fa-solid fa-person-swimming fa-4x fa-flip">
+                </i></div>
+
+              <div class="sname" style="text-align: center ; margin-top: 40px;">
+                <h2> SWIMMING</h2>
+              </div>
+
+              <div class="sdata"
+                style="text-align: center; font-size: 24px; padding-left: 12px; padding-right: 12px; margin-top: 30px; line-height: 30px; ">
+                <p style="color: rgb(20, 20, 20);">
+                  Riding a bike is fairly simple. If you have difficulty with a standard bicycle,
+                </p>
+              </div>
+
+              <div class="s-abo-swi"
+                style="height: 78PX; width: 100%; margin-top: 30px; background-color: red; color: white; text-align: center; padding-top: 28px;">
+                <a href="swimming.html">
+                  <h6>DISCOVER MORE ABOUT SWIMMING</h6>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+            <div class="box3" style="height: 450px; width: 100%; background-color: white;">
+
+              <div class="fitness-icon" style="text-align: center; padding-top: 50px;"> <i
+                  class="fa-solid fa-dumbbell fa-4x fa-flip">
+                </i></div>
+
+              <div class="sname" style="text-align: center ; margin-top: 40px;">
+                <h2> SPORT & FITNESS</h2>
+              </div>
+
+              <div class="sdata"
+                style="text-align: center; font-size: 24px; padding-left: 12px; padding-right: 12px; margin-top: 30px; line-height: 30px; ">
+                <p style="color: rgb(20, 20, 20);">
+                  Riding a bike is fairly simple. If you have difficulty with a standard bicycle,
+                </p>
+              </div>
+
+              <div class="s-abo-fit"
+                style="height: 78PX; width: 100%; margin-top: 30px; background-color: red; color: white; text-align: center; padding-top: 28px;">
+                <a href="sportfitness.html">
+                  <h6>DISCOVER MORE ABOUT FITNESS</h6>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+            <div class="box4 mb-5" style="height: 450px; width: 100%; background-color: white;">
+
+              <div class="spa-icon" style="text-align: center; padding-top: 50px;"> <i
+                  class="fa-solid fa-spa fa-4x fa-bounce">
+                </i></div>
+
+              <div class="sname" style="text-align: center ; margin-top: 40px;">
+                <h2> SALOON & SPA</h2>
+              </div>
+
+              <div class="sdata"
+                style="text-align: center; font-size: 24px; padding-left: 12px; padding-right: 12px; margin-top: 30px; line-height: 30px; ">
+                <p style="color: rgb(20, 20, 20);">
+                  Riding a bike is fairly simple. If you have difficulty with a standard bicycle,
+                </p>
+              </div>
+
+              <div class="s-abo-spa"
+                style="height: 78PX; width: 100%; margin-top: 30px; background-color: red; color: white; text-align: center; padding-top: 28px;">
+                <a href="salonspa.html">
+                  <h6>DISCOVER MORE ABOUT SPA</h6>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+
+  <!-- gallery -->
+
+
+  <div class="row">
+    <div class="col-12">
+      <div class="gallery-title text-center">
+        <span>Our Gallery</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+
+
+
+  <div class="row    ">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <div class="container">
+        <img src="images/pexels-tima-miroshnichenko-5327539.jpg" alt="Avatar" class="image  w-100 rounded mb-4 ">
+        <div class="middle">
+          <div class="text"> <a href="images/pexels-tima-miroshnichenko-5327539.jpg"> <i class="fa fa-search-plus"
+                aria-hidden="true"></i> </a> </div>
+        </div>
+      </div>
+
+
+
+      <div class="container">
+        <img src="images/pexels-photo-3014237.jpg" alt="Avatar" class="image  w-100 rounded mb-4 ">
+        <div class="middle">
+          <div class="text"> <a href="images/pexels-photo-3014237.jpg"> <i class="fa fa-search-plus"
+                aria-hidden="true"></i> </a> </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <div class="container">
+        <img src="images/pexels-photo-3838339.jpeg" alt="Avatar" class="image  w-100 rounded mb-4 ">
+        <div class="middle">
+          <div class="text"> <a href="images/pexels-photo-3838339.jpeg"> <i class="fa fa-search-plus"
+                aria-hidden="true"></i></a> </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="images/pexels-photo-3490348.jpeg" alt="Avatar" class="image  w-100 rounded mb-4 ">
+        <div class="middle">
+          <div class="text"> <a href="images/pexels-photo-3490348.jpeg"> <i class="fa fa-search-plus"
+                aria-hidden="true"></i> </a> </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <div class="container">
+        <img id="height" src="asset/new image.jpg" alt="Avatar" class="image  w-100    rounded mb-4 "
+          style="height: 260px !important;">
+        <div class="middle">
+          <div class="text"> <a href="asset/new image.jpg"> <i class="fa fa-search-plus" aria-hidden="true"></i> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="images/pexels-photo-4047160.jpeg" alt="Avatar" class="image  w-100 rounded mb-4 ">
+        <div class="middle">
+          <div class="text"> <a href="images/pexels-photo-4047160.jpeg"> <i class="fa fa-search-plus"
+                aria-hidden="true"></i> </a> </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- -------------client feedback-------------  -->
+
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6 col-md-12 col-sm-12 p-5">
+
+        <div class="feedback-img">
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.jpeg" height="600px" width="100%" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/testimonial img 1.jpg" height="600px" width="100%" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/testimonial img 2.jpg" height="600px" width="100%" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+
+        <div class="feedback-title" style="font-size: 40px;">
+
+
+          <span> Client Feedback </span>
+        </div>
+
+
+        <div class="sub-title">
+
+          <h1>What our Client Say's About Us</h1>
+
+        </div>
+
+
+        <div class="client-slider">
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+
+                <p style="color: grey;">
+
+                  AMAZING GYM, AMAZING WORKOUTS! The staff here is incredibly friendly and extremely qualified! They
+                  know how to push you to the limit in the best way possible with your workouts. You will not leave
+                  disappointed! Such a family vibe as soon as you walk in the doors – I highly recommend checking this
+                  gym out.
+
+                </p>
+
+
+                <div class="clent-name">
+
+                  <h1>Rehman Khan </h1>
+
+
+                </div>
+
+
+              </div>
+              <div class="carousel-item">
+
+                <p style="color: grey;">
+
+                  I love this place. I highly recommend this place to anyone who wants to get in shape. The trainers
+                  are really awesome and helpful, they make you feel really comfortable. The 45 min training goes
+                  super fast and you really enjoy doing it. Everyday is a new training, so it is never boring
+
+                </p>
+                <div class="clent-name">
+
+                  <h1>Furkan Shah</h1>
+
+
+                </div>
+
+
+              </div>
+              <div class="carousel-item">
+
+                <p style="color: grey;">
+
+                  This is a fantastic gym!! All the trainers are super nice and take an interest in you no matter what
+                  fitness level you’re at. I really like how they give me tips and tricks to get the most out of every
+                  workout. I’ve been going for a little bit and am already seeing a big change in my energy levels and
+                  body. It’s great! I feel 10 years younger!
+
+                </p>
+
+                <div class="clent-name">
+
+                  <h1>Salman Ali</h1>
+
+
+                </div>
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <!-- ---xx-----client feedback----xx----  -->
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <!-- client feedback -->
+
+  <!----------------------- about our trainer ------------------------>
+  <div class="row">
+    <div class="col-12">
+      <div class="gallery-title text-center">
+        <span>Our Trainer</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6  col-md-12  col-sm-12">
+
+              <img style="margin-left: 50px;" src="images/trainer1.png" class="d-block w-40" alt="" width="70%"
+                height="500px">
+            </div>
+            <div class="col-lg-6  col-md-12  col-sm-12">
+
+
+              <div id="about-trainer">
+
+
+                <h1
+                  style="color: rgb(79, 81, 196); text-align: center;  margin-top: 60px; font-family: 'Poppins', sans-serif; ">
+                  Kenneth </h1>
+                <p
+                  style="text-align: justify; padding: 0 10px; color: grey;margin-top: 50px; font-family: 'Poppins', sans-serif;  ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatem repellat nostrum
+                  veritatis, sequi ut molestias nesciunt nihil quo ipsa Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Officiis, molestias
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+
+                </p>
+
+
+                <div class="social-link-trainer">
+
+
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <div class="carousel-item">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6  col-md-12   col-sm-12">
+
+              <img src="images/trainer 2.png" class="d-block w-40" alt="...">
+            </div>
+            <div class="col-lg-6 col-md-12 col-md-12  ">
+
+
+              <div class="about-trainer">
+
+                <h1
+                  style="color: rgb(79, 81, 196); text-align: center;  margin-top: 60px;font-family: 'Poppins', sans-serif; ">
+                  Jacob </h1>
+                <p
+                  style="text-align: justify; padding: 0 10px; color: grey;margin-top: 50px; font-family: 'Poppins', sans-serif;  ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatem repellat nostrum
+                  veritatis, sequi ut molestias nesciunt nihil quo ipsa Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Officiis, molestias
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+
+                </p>
+
+
+                <div class="social-link-trainer">
+
+
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="carousel-item">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6  col-md-12   col-sm-12">
+
+              <img src="images/trainer 6.png" class="d-block w-40" alt="...">
+            </div>
+            <div class="col-lg-6 col-md-12 col-md-12  ">
+
+
+              <div class="about-trainer">
+
+                <h1
+                  style="color: rgb(79, 81, 196); text-align: center;  margin-top: 60px;font-family: 'Poppins', sans-serif; ">
+                  Brandon </h1>
+                <p
+                  style="text-align: justify; padding: 0 10px; color: grey;margin-top: 50px; font-family: 'Poppins', sans-serif; ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatem repellat nostrum
+                  veritatis, sequi ut molestias nesciunt nihil quo ipsa Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Officiis, molestias
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit,
+
+                </p>
+
+
+                <div class="social-link-trainer  ">
+
+
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--xx------------------ about our trainer ----------------------xx-->
+
+  <!------------------------------------------ time table ---------------------------------------->
+  <div class="imgtable">
+    <div class="container-fluid ">
+
+      <div class="row ">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 mt-5 mb-2">
+          <h3 style="color: rgb(0, 0, 0);text-align: center;">OUR TIME SCHEDULE</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12  text-right mb-5">
+        <h1 style="text-align: center; color: rgb(0, 0, 0); font-size: 55px;">SELECT THE PERFECT TIME <br> YOU NEED
+          NOW</h1>
+
+      </div>
+
+    </div>
+
+    <div class="container ">
+
+      <div class="row">
+
+        <div style="overflow-x: auto;">
+          <table style="   border: 1px solid rgb(100, 100, 100); margin-bottom: 50px;">
+            <thead style="text-align: center; height: 80px; font-size: 25px; ">
+              <tr>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+                <td>Sunday</td>
+              </tr>
+            </thead>
+
+            <tbody style="text-align: center; height: 130px; width: 150px; font-size: 23px;  padding-top: 150px;">
+              <tr>
+                <td style="color: rgb(0, 190, 159);" class="time"> 6.00am - 8.00am</td>
+                <td class="fill">
+                  WEIGHT LOOSE <br>
+                  <p style="font-size: 18px;">RLefew D. Loee</p>
+                </td>
+                <td class="fill" id="light">
+                  CARDIO
+                  <p>RLefew D. Loee</p>
+                </td>
+                <td class="fill">
+                  YOGA
+                  <p>Keaf Shen</p>
+                </td>
+                <td class="fill" id="light">
+                  FITNESS
+                  <p>Kimberly Stone</p>
+                </td>
+                <td class="blank">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                <td class="fill" id="light">
+                  BOXING
+                  <p>Rachel Adam</p>
+                </td>
+                <td class="fill">
+                  BODY BUILDING
+                  <p>Robert Cage</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="color: rgb(0, 190, 159);" class="time"> 8.00am - 10.00am</td>
+                <td class="blank" id="lightbla">
+
+                </td>
+                <td class="fill">
+                  FITNESS
+                  <p>Kimberly Ston</p>
+                </td>
+                <td class="fill" id="light">
+                  WEIGHT LOOSE
+                  <p>RLefew D. Loee</p>
+                </td>
+                <td class="fill">
+                  CARDIO
+                  <p>RLefew D. Loe</p>
+                </td>
+                <td class="blank" id="lightbla">
+
+                </td>
+                <td class="fill">
+                  KARATE
+                  <p>Donald Grey</p>
+                </td>
+                <td class="blank" id="lightbla">
+
+                </td>
+              </tr>
+
+              <tr>
+                <td style="color: rgb(0, 190, 159);" class="time"> 10.00am - 12.00am</td>
+                <td class="fill">
+                  BOXING
+                  <p>Rachel Adam</p>
+                </td>
+                <td class="fill" id="light">
+                  KARATE
+                  <p>Donald Grey</p>
+                </td>
+                <td class="fill">
+                  BODY BUILDING
+                  <p>Robert Cage</p>
+                </td>
+                <td class="blank" id="lightbla">
+
+                </td>
+                <td class="fill">
+                  YOGA
+                  <p>Keaf Shen</p>
+                </td>
+                <td class="fill" id="light">
+                  CARDIO
+                  <p>RLefew D. Loe</p>
+                </td>
+                <td class="fill">
+                  FITNESS
+                  <p>Kimberly Ston</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="color: rgb(0, 190, 159);" class="time"> 12.00pm - 2.00pm</td>
+                <td class="fill" id="light">
+                  CARDIO
+                  <p>RLefew D. Loe</p>
+                </td>
+                <td class="blank">
+
+                </td>
+                <td class="fill" id="light">
+                  BOXING
+                  <p>Rachel Adam</p>
+                </td>
+                <td class="fill">
+                  YOGA
+                  <p>Keaf Shen</p>
+                </td>
+                <td class="fill" id="light">
+                  KARATE
+                  <p>Donald Grey</p>
+                </td>
+                <td class="fill">
+                  BOXING
+                  <p>Rachel Adam</p>
+                </td>
+                <td class="fill" id="light">
+                  WEIGHT LOOSE
+                  <p>RLefew D. Loee</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="color: rgb(0, 190, 159);" class="time"> 2.00pm - 4.00pm</td>
+                <td>
+
+                </td>
+                <td class="fill" id="light">
+                  FITNESS
+                  <p>Kimberly Ston</p>
+                </td>
+                <td class="fill">
+                  WEIGHT LOOSE
+                  <p>RLefew D. Loee</p>
+                </td>
+                <td class="fill" id="light">
+                  CARDIO
+                  <p>RLefew D. Loe</p>
+                </td>
+                <td class="blank">
+
+                </td>
+                <td class="fill" id="light">
+                  KARATE
+                  <p>Donald Grey</p>
+                </td>
+                <td class="blank">
+
+                </td>
+              </tr>
+
+              <tr>
+                <td style="color: rgb(0, 190, 159);" class="time"> 4.00pm - 6.00pm</td>
+                <td class="fill" id="light">
+                  CARDIO
+                  <p>RLefew D. Loe</p>
+                </td>
+                <td class="blank">
+
+                </td>
+                <td class="fill" id="light">
+                  BOXING
+                  <p>Rachel Adam</p>
+                </td>
+                <td class="fill">
+                  YOGA
+                  <p>Keaf Shen</p>
+                </td>
+                <td class="fill" id="light">
+                  KARATE
+                  <p>Donald Grey</p>
+                </td>
+                <td class="fill">
+                  BOXING
+                  <p>Rachel Adam</p>
+                </td>
+                <td class="fill" id="light">
+                  WEIGHT LOOSE
+                  <p>RLefew D. Loee</p>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <footer class="text-center text-lg-start text-white mt-2 bg-black " style="background-image: url(asset/footerback1.jpg);
+            background-size: 100% ;
+           background-position: top;
+           background-attachment: fixed;
+           background-repeat: no-repeat;">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-between p-4" style="background-image: url(asset/footerback1.jpg);
+                background-size: 100% 100% ;
+               background-position: top;
+               background-attachment: fixed;
+               background-repeat: no-repeat;">
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h3 class="text-uppercase fw-bold">PRIME FITNESS</h3>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p style="text-align: justify;">
+                Prime Fitness is fitness club established in the year 1982. The fitness club has equipped with all
+                basic fitness equipment and also included the newly introduced. The Prime fitness club is the flagship
+                brand for Prime Fitness Club Ltd, a UN based health and fitness services provider and a pioneer in the
+                “Integrated Health Club Management Solutions’ business.
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h3 class="text-uppercase fw-bold">Services</h3>
+              <hr class="mb-0 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                <a href="cycling.html" class="text-white "
+                  style="text-decoration: none; font-size: 20px; align-items: center;"> Cycling</a>
+              </p>
+              <p>
+                <a href="swimming.html" class="text-white" style="text-decoration: none; font-size: 20px;">Swimming</a>
+              </p>
+              <p>
+                <a href="sportfitness.html" class="text-white" style="text-decoration: none; font-size: 20px;">Sports
+                  & Fitness</a>
+              </p>
+              <p>
+                <a href="salonspa.html" class="text-white" style="text-decoration: none; font-size: 20px;">Saloon And
+                  Spa</a>
+              </p>
+
+              <p>
+                <a href="groupexe.html" class="text-white" style="text-decoration: none; font-size: 20px;">Group
+                  Exercise</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+              <!-- Links -->
+              <h3 class="text-uppercase fw-bold">Useful links</h3>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                <a href="index.html" class="text-white" style="text-decoration: none; font-size: 20px;">Home</a>
+              </p>
+              <p>
+                <a href="becamem.html" class="text-white" style="text-decoration: none; font-size: 20px;">Become A
+                  Member</a>
+              </p>
+              <p>
+                <a href="about us.html" class="text-white" style="text-decoration: none; font-size: 20px;">About
+                  Us</a>
+              </p>
+              <p>
+                <a href="inquiryform.html" class="text-white" style="text-decoration: none; font-size: 20px;">Inquiry
+                  Form</a>
+              </p>
+              <p>
+                <a href="faq.html" class="text-white" style="text-decoration: none; font-size: 20px;">Faq</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h3 class="text-uppercase fw-bold">Contact</h3>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p style="text-decoration: none; font-size: 20px;"><i class="fas fa-home mr-3"></i> Prime Fitness ,
+                Model Colony , Karachi Pakistan.</p>
+              <p style="text-decoration: none; font-size: 20px;"><i class="fas fa-envelope mr-3"></i>
+                Prime_Fitness.com</p>
+              <p style="text-decoration: none; font-size: 20px;"><i class="fas fa-phone mr-3"></i> + 92-346-1234567
+              </p>
+              <p style="text-decoration: none; font-size: 20px;"><i class="fas fa-print mr-3"></i> + 92-453-1234567
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="#">Prime Fitness</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+  </div>
+
+
+  <!--xx------------------------- time table -----------------------------------xx-->
+
+
+  <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- bootstrap javascript link -->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+.nav-link{
+    color: white !important;
+    text-align: right !important;
+}
+
+.navbar-nav{
+    margin-left: 180px !important;
+}
+
+.head1{
+    animation: ease-in 5s !important;
+    animation-name: abc !important;
+}
+
+@keyframes abc{
+    0%{ transform: translate(-500px) !important;}
+    100%{ transform: translate(0px) !important;}
+}
+
+/*----------------------- perional content -------------------*/
+
+.per-content{
+    position: relative;
+    height: 500px !important; 
+    width: 100% !important; 
+}
+
+.per-content .perimg img{
+    height: 500px !important; 
+    width: 100% !important;
+    position: absolute !important;
+}
+
+.per-content .perhead{
+    position: absolute !important;
+
+    font-size: 50px !important;
+    margin-left: 160px;
+    margin-top: 13% !important;
+color: white;
+
+}
+
+.per-content .perpara{
+    position: absolute !important;
+
+    font-size: 20px !important;
+    margin-top: 22% !important;
+    text-align: center;
+    color: white;
+}
+
+/*----------xx------------- perional content ----------xx---------*/
+
+/*----------xx------------- group content ----------xx---------*/
+
+.gro-content{
+    position: relative;
+    height: 500px !important; 
+    width: 100% !important;
+}
+
+.gro-content .groimg img{
+    height: 500px !important; 
+    width: 100% !important;
+    position: absolute !important;
+}
+
+.grohead .card-body{
+    font-size: 50px;
+ 
+    color: white;
+    height: 150px;
+}
+
+.gro-content .grohead{
+    position: absolute !important;
+
+    font-size: 50px !important;
+    margin-left: 160px;
+    margin-top: 11% !important;
+color: white;
+
+}
+
+
+.gro-content .gropara{
+    position: absolute !important;
+
+    font-size: 20px !important;
+    margin-top: 22% !important;
+    text-align: center;
+    color: white;
+}
+
+/*----------xx------------- group content ----------xx---------*/

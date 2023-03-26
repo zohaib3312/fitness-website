@@ -1,0 +1,48 @@
+.feedback-title span{
+
+    font-family: 'Teko', sans-serif !important;
+    
+    /* font-size: 24px; */
+    font-weight: 300;
+    margin-left: 72px;
+    margin-bottom: 22px;
+    color: rgb(240, 78, 60);
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+
+    padding-top: 20px;
+}
+
+
+.feedback-title span::before{
+
+
+
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: rgb(240, 78, 60);
+    left: -67px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 10px;
+}
+
+
+.sub-title h1{
+    font-size: 80px;
+
+
+    font-family: 'Teko', sans-serif;
+    color: #900C3F !important;
+
+}
+
+
+.clent-name h1{
+
+
+    font-family:    'Teko', sans-serif; ;
+}

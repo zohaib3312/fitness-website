@@ -1,0 +1,144 @@
+/* header button */
+.btn-header{
+    width: 200px;
+    padding: 20px 20px;
+    background: rgb(255, 19, 19);
+    color: white;
+    font-family:  sans-serif;
+    border: none;
+    text-align: center;
+    
+    
+    
+    }
+    
+    .nav-link:hover{
+            color: rgb(255, 19, 19) !important;
+        
+        }
+    
+    
+    .dropdown-menu a:hover{
+            background-color: blue;
+            color: white !important ;
+            
+        }
+        
+    
+    
+    
+    .btn-header a{
+        text-decoration: none;
+        color: white;
+        
+    
+    
+    }
+
+
+    .navbar-nav a{
+        color: white !important;
+    } 
+
+    .dropdown-menu a {
+
+        color: black !important;
+        border-bottom: 2px solid white !important;
+        margin-top: -10px;
+    
+    }
+
+    
+
+    .bg-img{
+    
+        background: linear-gradient( rgba( 0,0,0,0.5), rgba( 0,0,0,0.5)),url(https://images.pexels.com/photos/3763869/pexels-photo-3763869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 700px;
+
+    }
+
+
+    /* header button */
+
+
+    /* title section  */
+
+    .cont-title  h1{
+/* transform: translate( 450px , 250px ); */
+font-size:  59px;
+color: #fff;
+font-family: "Poppins",Arial,sans-serif;
+text-transform: capitalize;
+margin-top: 230px;
+}
+
+
+    /* .social-links i {
+
+        margin-top: 20px;
+        font-size: 40px;
+        padding: 10px;
+    }
+.social-links .one {
+width: 40%;
+height: 100px;
+background-color: #A3C91D;
+margin-top: 20px;
+text-align: center;
+border-radius: 50%;
+margin-left: 50px;
+} 
+
+.dis-one p{
+    margin-top: 20px;
+}
+
+
+
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social-links .one{
+flex-wrap: nowrap;
+} */
+
+
+
+.social-links i {
+    font-size: 40px;
+    padding: 20px;
+    ;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: #f20d0d;
+}
+
+.social-links{
+    margin-top: 20px;
+}
+
+
+/* @media  only  screen and (min-width:698) {
+    
+.social-links{
+justify-content: center;
+
+}
+
+}
+ */
+
+
+input{
+    width: 70%;
+    padding: 10px 10px ;
+    margin-top: 10px;
+    border-width: ;
+}

@@ -1,0 +1,404 @@
+.btn-header{
+
+padding: 20px 20px;
+background: rgb(255, 19, 19);
+color: white;
+font-family:  sans-serif;
+border: none;
+display: inline;
+
+}
+
+
+.btn-header a{
+    text-decoration: none;
+    color: white;
+    
+
+
+}
+
+.nav-link:hover{
+    color: rgb(255, 19, 19) !important;
+
+}
+
+
+.navbar-nav a{
+    color: white !important;
+} 
+
+
+.drop-down  {
+
+    list-style-type: none !important;
+}
+
+
+.one{
+
+background-image: url(https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 790px;
+background-attachment: fixed;
+}
+
+.dropdown-menu a{
+
+    color: black!important;
+    border-bottom: 2px solid white !important;
+    margin-top: -10px;
+    
+}
+
+.dropdown-menu a:hover{
+    background-color: blue;
+    color: white !important ;
+    
+}
+
+.navbar-toggler{
+    box-shadow: none !important;
+}
+
+
+.navbar-toggler i{
+    color: white !important;
+}
+
+
+.text-title H1{
+
+    color: white !important;
+    font-size: 50PX;
+    line-height: 80px;
+
+}
+
+
+
+.text-title  ::before{
+    content: "";
+
+border-bottom: 2PX SOLID orange;
+position: absolute;
+
+
+width: 10%;
+}
+
+
+
+.four{
+    margin-top: 10px;
+}
+
+
+.play-btn{
+
+    background-color: rgb(255, 19, 19);
+    border-radius: 50%;
+    border: 1px solid red;
+    width: 100%;
+    height: 200px;
+
+}
+
+ 
+
+
+
+.play-btn i{
+    font-size: 50px;
+transform: translate(75px,80px);
+
+color: white;
+}
+
+
+
+.play-btn:hover{
+    background-color: white !important;
+}
+
+
+.play-btn:hover  i{
+    color: rgb(255, 19, 19) !important;
+} 
+
+
+
+
+
+/* -------------------media query section-----------------  */
+
+@media (max-width:768px) {
+    
+
+    .play-btn{
+
+        background-color: rgb(255, 19, 19);
+        border-radius: 50%;
+        border: 1px solid red;
+        width: 100%;
+        height: 100px;
+        margin-top: 100px;
+    
+    }
+    
+
+    .play-btn i{
+
+        font-size: 50px;
+transform: translate(30px,30px);
+    }
+
+
+
+    .one{
+        height: 800px;
+    }
+
+}
+
+@media (max-width:425px) {
+    
+
+    .play-btn{
+
+        background-color: rgb(255, 19, 19);
+        border-radius: 50%;
+        border: 1px solid red;
+        width: 200%;
+        height: 100px;
+        margin-top: 100px;
+    
+    }
+    
+
+    .play-btn i{
+
+        font-size: 30px;
+transform: translate(30px,40px);
+    }
+
+
+
+    .one{
+        height: 800px;
+    }
+
+
+    .text-title h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+
+
+}
+
+@media (max-width:375px) {
+    
+
+    .play-btn{
+
+        background-color: rgb(255, 19, 19);
+        border-radius: 50%;
+        border: 1px solid red;
+        width: 250%;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: -10px;
+
+    
+    }
+    
+
+    .play-btn i{
+
+        font-size: 30px;
+transform: translate(30px,40px);
+    }
+
+
+
+    .one{
+        height: 800px;
+    }
+
+
+    .text-title h1{
+        font-size: 40px;
+    }
+
+}
+@media (max-width:320px) {
+    
+
+    .play-btn{
+
+        background-color: rgb(255, 19, 19);
+        border-radius: 50%;
+        border: 1px solid red;
+        width: 300%;
+        height: 100px;
+        margin-top: 100px;
+    
+    }
+    
+
+    .play-btn i{
+
+        font-size: 30px;
+transform: translate(25px,40px);
+    }
+
+
+
+    .one{
+        height: 700px;
+    }
+
+
+    .text-title h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+}
+@media (max-width:329px) {
+    
+
+    .play-btn{
+
+        background-color: rgb(255, 19, 19);
+        border-radius: 50%;
+        border: 1px solid red;
+        width: 300%;
+        height: 100px;
+        margin-top: 100px;
+    
+    }
+    
+
+    .play-btn i{
+
+        font-size: 30px;
+transform: translate(25px,40px);
+    }
+
+
+
+    .one{
+        height: 800px;
+    }
+
+
+    .text-title h1{
+        font-size: 40px;
+    }
+
+}
+
+
+
+@media (max-width:311px) {
+    
+
+    .play-btn{
+
+        background-color: rgb(255, 19, 19);
+        border-radius: 50%;
+        border: 1px solid red;
+        width: 300%;
+        height: 100px;
+        margin-top: 100px;
+    
+    }
+    
+
+    .play-btn i{
+
+        font-size: 30px;
+transform: translate(25px,40px);
+    }
+
+
+
+    .one{
+        height: 800px;
+    }
+
+
+    .text-title h1{
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+/* SERVECESS */
+
+
+/* client feedback */
+
+.feedback-title span{
+
+    font-family: 'Teko', sans-serif !important;
+    
+    /* font-size: 24px; */
+    font-weight: 300;
+    margin-left: 72px;
+    margin-bottom: 22px;
+    color: rgb(240, 78, 60);
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+
+    padding-top: 20px;
+}
+
+
+.feedback-title span::before{
+
+
+
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: rgb(240, 78, 60);
+    left: -67px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 10px;
+}
+
+
+.sub-title h1{
+    font-size: 80px;
+
+
+    font-family: 'Teko', sans-serif;
+    color: #900C3F !important;
+
+}
+
+
+.clent-name h1{
+
+
+    font-family:    'Teko', sans-serif; ;
+}
+
+/* client feedback */
+
+
